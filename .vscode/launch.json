@@ -1,0 +1,63 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python : directory -> directory",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+            "args": [
+                "-in",  "images",
+                "-out", "videos",
+                "-fps", "23",
+                "-v", "1"
+            ]
+        },
+        {
+            "name": "Python : TIFF -> directory",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+            "args": [
+                "-in",  "images/oeuf2.tif",
+                "-out", "videos",
+                "-fps", "23",
+                "-v", "1"
+            ]
+        },
+        {
+            "name": "Python : TIFF -> Video",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+            "args": [
+                "-in",  "images/oeuf2.tif",
+                "-out", "videos/oeuf2_b.mp4",
+                "-fps", "23",
+                "-v", "1"
+            ]
+        },
+        {
+            "name": "Python : DirTIFF -> Video",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+            "args": [
+                "-in",  "Oeuf1_4",
+                "-out", "Oeuf1_4/Oeuf1_4.avi",
+                "-fps", "3"
+            ]
+        }
+    ]
+}
